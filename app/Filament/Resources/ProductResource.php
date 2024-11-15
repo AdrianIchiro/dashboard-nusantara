@@ -27,8 +27,8 @@ class ProductResource extends Resource
             ->schema([
                 TextInput::make('nama_product'),
                 TextInput::make('kode_product'),
-                TextInput::make('harga_barang'),
-                TextInput::make('jumlah_barang'),
+                TextInput::make('harga_barang')->numeric(),
+                TextInput::make('jumlah_barang')->numeric(),
             ]);
     }
 
