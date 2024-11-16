@@ -25,10 +25,10 @@ class ProductResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('nama_product'),
-                TextInput::make('kode_product'),
-                TextInput::make('harga_barang')->numeric(),
-                TextInput::make('jumlah_barang')->numeric(),
+                // TextInput::make('nama_product'),
+                // TextInput::make('kode_product'),
+                // TextInput::make('harga_barang')->numeric(),
+                // TextInput::make('jumlah_barang')->numeric(),
             ]);
     }
 
@@ -36,10 +36,10 @@ class ProductResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('nama_product'),
-                TextColumn::make('kode_product'),
-                TextColumn::make('harga_barang'),
-                TextColumn::make('jumlah_barang'),
+                // TextColumn::make('nama_product')->searchable(),
+                // TextColumn::make('kode_product'),
+                // TextColumn::make('harga_barang'),
+                // TextColumn::make('jumlah_barang'),
             ])
             ->filters([
                 //
